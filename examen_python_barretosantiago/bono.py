@@ -7,7 +7,7 @@ def bonos():
     datos = cargar_datos()
     identificacion = input("SCRIBE EL NUMEROD DE IDENTIFICACIÒN DEL EMPLEADO ")
     if identificacion in datos:
-        fecha = str((datetime)(""))
+        fecha = str(datetime.now())
         valor = float(input(" VALOR DEL BONO: "))
         concepto = input("Concepto del bono: ")
         datos[identificacion]['bonos'].append({'fecha': fecha, 'valor': valor, 'concepto': concepto})
